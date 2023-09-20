@@ -31,27 +31,10 @@ https://github.com/AAdewunmi/Project_SignUpForm.git
 
 4. Open index.html in Visual Studio Code, using Live Server
 
-Enjoy :)
-
 ## 4. Screenshots
 
 ![Image description](Screenshot-Close.png)
 
 ![Image description](Screenshot-Open.png)
 
-### Adapted From:
 
-Project Name: 
-Sign Up Form Project
-
-Authors:
-
-50+ Web Projects with HTML, CSS, and JavaScript
-HTML, CSS, and JavaScript. Build 50+ Web Projects with HTML, CSS, and JavaScript
-
-Created by Code And Create, George Lomidze, Lasha Nozadze
-
-Last updated 05/2022
-
-UDEMY URL:
-https://www.udemy.com/course/50-web-projects-with-html-css-and-javascript/
