@@ -1,0 +1,7 @@
+--- 
+demo_job_1: 
+  script: 
+    - "echo Hello World"
+    - gradle cucumber
+  tags: 
+    - ci
