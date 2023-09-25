@@ -26,15 +26,32 @@ public class SignInPage {
     @FindBy(how= How.XPATH, using = "//input[@placeholder=\"Email\"]")
     public WebElement txtEmailXPath;
 
-    @FindBy(how= How.ID, using = "nameBtn")
+    @FindBy(how= How.XPATH, using = "//input[@placeholder=\"Country\"]")
+    public WebElement txtCountryXPath;
+
+    @FindBy(how= How.XPATH, using = "//input[@placeholder=\"Phone\"]")
+    public WebElement txtPhoneXPath;
+
+    @FindBy(how= How.XPATH, using = "//input[@placeholder=\"Company\"]")
+    public WebElement txtCompanyXPath;
+
+    @FindBy(how= How.ID, using = "txtName")
     public WebElement txtNameID;
 
-    @FindBy(how= How.ID, using = "passwordBtn")
+    @FindBy(how= How.ID, using = "txtPassword")
     public WebElement txtPasswordID;
 
-    @FindBy(how= How.ID, using = "emailBtn")
+    @FindBy(how= How.ID, using = "txtEmail")
     public WebElement txtEmailID;
 
+    @FindBy(how= How.ID, using = "txtCountry")
+    public WebElement txtCountryID;
+
+    @FindBy(how= How.ID, using = "txtPhone")
+    public WebElement txtPhoneID;
+
+    @FindBy(how= How.ID, using = "txtCompany")
+    public WebElement txtCompanyID;
     @FindBy(how= How.ID, using = "registerBtn")
     public WebElement btnSignUp;
 
@@ -49,6 +66,9 @@ public class SignInPage {
         txtNameXPath.sendKeys(name);
         txtEmailXPath.sendKeys(email);
         txtPasswordXPath.sendKeys(password);
+        txtCountryXPath.sendKeys("United Kingdom");
+        txtPhoneXPath.sendKeys("(+44)7778998273");
+        txtCompanyXPath.sendKeys("KPMG");
     }
 
     public void enterLoginCredentialsByID(String name, String password, String email)
@@ -56,11 +76,13 @@ public class SignInPage {
         txtNameID.sendKeys(name);
         txtEmailID.sendKeys(email);
         txtPasswordID.sendKeys(password);
+        txtCountryID.sendKeys("United Kingdom");
+        txtPhoneID.sendKeys("(+44)7778943273");
+        txtCompanyID.sendKeys("KPMG");
     }
 
     public void clickSignUp(){
         btnSignUp.submit();
     }
-
 
 }
